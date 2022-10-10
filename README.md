@@ -6,7 +6,7 @@ A Python library that makes beautiful text bubbles in your terminal using [NerdF
 
 ## Install
 ```sh
-pip install bubble-wrap
+pip install bubblewrap-cli
 ```
 
 ## Usage
