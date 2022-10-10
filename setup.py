@@ -8,11 +8,12 @@ setup(
     name="bubble-wrap",
     url="https://github.com/TechWiz-3/bubblewrap",
     author="Zac the Wise aka TechWiz-3",
-    version='0.1.0',
+    version='0.1.1',
     description="A Python library that makes beautiful text bubbles in your terminal using NerdFont icons.",
     long_description_content_type='text/markdown',
     long_description=long_description,
-    py_modules=["src.bubblewrap"],
+    package_dir={'': 'src'},
+    py_modules=["bubblewrap"],
     entry_points='''
         [console_scripts]
         bubblewrap=src.bubblewrap:cli
