@@ -39,6 +39,4 @@ def cli() -> None:
     c.print(b.get_rich_bubble("Create beautiful CLI applications, with ease!", bg_color="deep_pink4"))
     print()
 
-cli()
-
 #print(b.get_ansi_bubbles("Ayo how are you", "\033[31m", "\033[32;41m", "\033[0m"))
