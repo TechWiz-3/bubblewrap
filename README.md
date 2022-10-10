@@ -1,6 +1,6 @@
 # Bubblewrap
 
-<img src="./media/example.png" alt="bubbles" width="650"> 
+<img src="https://raw.githubusercontent.com/TechWiz-3/bubblewrap/main/media/example.png" alt="bubbles" width="650"> 
 
 A Python library that makes beautiful text bubbles in your terminal using [NerdFont](https://www.nerdfonts.com/) icons.  
 
@@ -26,4 +26,4 @@ print()
 ```
 
 ## Example
-![bubbles](./media/bubbles.png)
+![bubbles](https://raw.githubusercontent.com/TechWiz-3/bubblewrap/main/media/bubbles.png)
