@@ -25,5 +25,19 @@ c.print(b.get_rich_bubble("Bubblewrap!", bg_color="dark_green", fg_color="grey66
 print()
 ```
 
+You can also use your own ANSI codes
+
+```py
+from bubblewrap import Bubbles
+
+b = Bubbles()
+
+print()
+# takes the text, circle style (an fg color), test style (the bg color same as fg color
+# foreground and optionally it's own fg color), reset (your ANSI reset sequence)
+print(b.get_ansi_bubbles("Ayo how are you?", "\033[31m", "\033[32;41m", "\033[0m"))
+print()
+```
+
 ## Example
 ![bubbles](https://raw.githubusercontent.com/TechWiz-3/bubblewrap/main/media/bubbles.png)
