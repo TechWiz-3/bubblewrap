@@ -5,14 +5,14 @@ class Bubbles():
 
     def get_rich_bubble(self, txt, bg_color="blue",
                         fg_color="white", rich=True):
-        c_style = f"[{bg_color}]"
-        c_close = f"{c_style[:1]}/{c_style[1:]}"
-        b_open = f"[{fg_color} on {bg_color}]"
-        b_close = f"{b_open[:1]}/{b_open[1:]}"
-        return f"{c_style}{c_close}{b_open}{txt}{b_close}{c_style}{c_close}"
+        circle_style = f"[{bg_color}]"
+        circle_close = f"{circle_style[:1]}/{circle_style[1:]}"
+        body_open = f"[{fg_color} on {bg_color}]"
+        body_close = f"{body_open[:1]}/{body_open[1:]}"
+        return f"{circle_style}{circle_close}{body_open}{txt}{body_close}{circle_style}{circle_close}"
 
-    def get_ansi_bubbles(self, txt, c_style, txt_style, reset):
-        bubble = f"{c_style}{reset}{txt_style}{txt}{reset}{c_style}{reset}"
+    def get_ansi_bubbles(self, txt, circle_style, txt_style, reset):
+        bubble = f"{circle_style}{reset}{txt_style}{txt}{reset}{circle_style}{reset}"
         return bubble
 
 
