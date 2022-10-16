@@ -9,10 +9,13 @@ class Bubbles():
         circle_close = f"{circle_style[:1]}/{circle_style[1:]}"
         body_open = f"[{fg_color} on {bg_color}]"
         body_close = f"{body_open[:1]}/{body_open[1:]}"
-        return f"{circle_style}{circle_close}{body_open}{txt}{body_close}{circle_style}{circle_close}"
+        return_str = f"{circle_style}{circle_close}{body_open}{txt}" \
+                     f"{body_close}{circle_style}{circle_close}"
+        return return_str
 
     def get_ansi_bubbles(self, txt, circle_style, txt_style, reset):
-        bubble = f"{circle_style}{reset}{txt_style}{txt}{reset}{circle_style}{reset}"
+        bubble = f"{circle_style}{reset}{txt_style}" \
+                 f"{txt}{reset}{circle_style}{reset}"
         return bubble
 
 
