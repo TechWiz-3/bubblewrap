@@ -39,5 +39,24 @@ print(b.get_ansi_bubbles("Ayo how are you?", "\033[31m", "\033[32;41m", "\033[0m
 print()
 ```
 
+Alternatively, you can link bubbles together:
+```py
+from bubblewrap import Bubbles
+from rich.console import Console
+
+b = Bubbles()
+c = Console()
+
+print()
+c.print(b.get_rich_chain("Fri 09:45", "white", "bright_black", divider="")
+         .link("直 Wi-Fi", "orange3", "white")
+         .link(" Charging", "bright_green", "black").end())
+
+print()
+print(b.get_ansi_chain("~/Projects", "\033[37;45m", "\033[0m")
+       .link("bubblewrap", "\033[30;46m")
+       .link("שׂ main", "\033[30;43m").end())
+```
+
 ## Example
 ![bubbles](https://raw.githubusercontent.com/TechWiz-3/bubblewrap/main/media/bubbles.png)
