@@ -1,4 +1,4 @@
-class Bubbles():
+class Bubbles:
 
     def __init__(self):
         pass
@@ -16,15 +16,14 @@ class Bubbles():
                  f"{txt}{reset}{circle_style}{reset}"
         return bubble
 
-    def get_rich_chain(self, txt, bg_color="blue",
-                       fg_color="white", divider=""):
+    def get_rich_chain(self, txt, bg_color="blue", fg_color="white", divider=""):
         return Link(txt, bg_color, fg_color, divider)
 
     def get_ansi_chain(self, txt, txt_style, reset, divider=""):
         return ANSILink(txt, txt_style, reset, divider)
 
 
-class Link():
+class Link:
     base_str = ""
     bg_color = ""
     divider = ""
@@ -36,13 +35,12 @@ class Link():
         body_open, body_close = get_tags(f"{fg_color} on {bg_color}")
 
         pre_txt = ""
-        if (prev_link is not None):
+        if prev_link is not None:
             pre_txt = prev_link.base_str
 
             # divider fg = prev link bg
             # divider bg = current link bg
-            divider_open, divider_close = get_tags(f"{prev_link.bg_color} on "
-                                                   f"{bg_color}")
+            divider_open, divider_close = get_tags(f"{prev_link.bg_color} on {bg_color}")
 
             pre_txt += f"{divider_open}{divider}{divider_close}"
 
@@ -58,7 +56,7 @@ class Link():
         return Link(txt, bg_color, fg_color, self.divider, self)
 
 
-class ANSILink():
+class ANSILink:
     base_str = ""
     txt_style = ""
     divider = ""
@@ -70,7 +68,7 @@ class ANSILink():
         self.reset = reset
 
         pre_txt = ""
-        if (prev_link is not None):
+        if prev_link is not None:
             pre_txt = prev_link.base_str
 
             # divider fg = prev link bg
@@ -103,6 +101,7 @@ def get_tags(style):
 
 def cli() -> None:
     from rich.console import Console
+
     b = Bubbles()
     c = Console()
     print()
@@ -129,6 +128,3 @@ def cli() -> None:
     c.print(b.get_rich_bubble("Create beautiful CLI applications, with ease!",
             bg_color="deep_pink4"))
     print()
-
-# print(b.get_ansi_bubbles("Ayo how are you",
-#       "\033[31m", "\033[32;41m", "\033[0m"))
