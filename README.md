@@ -49,7 +49,7 @@ b = Bubbles()
 c = Console()
 
 print()
-c.print(b.get_rich_chain("Fri 09:45", "white", "bright_black", divider="")
+c.print(b.get_rich_chain("Fri 09:45", "white", "black", divider="")
          .link("直 Wi-Fi", "orange3", "white")
          .link(" Charging", "bright_green", "black").end())
 
@@ -63,9 +63,8 @@ print(b.get_ansi_chain("~/Projects", "\033[37;45m", "\033[0m")
 ![bubbles](https://raw.githubusercontent.com/TechWiz-3/bubblewrap/main/media/bubbles.png)
 
 
-## Contributors🌟
+## Contributors 🌟
 <br>
-
 <div align="center">
 <a href="https://github.com/TechWiz-3/bubblewrap/graphs/contributors">
 
