@@ -65,6 +65,7 @@ print(b.get_ansi_chain("~/Projects", "\033[37;45m", "\033[0m")
 
 ## Contributors 🌟
 <br>
+<br>
 <div align="center">
 <a href="https://github.com/TechWiz-3/bubblewrap/graphs/contributors">
 
