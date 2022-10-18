@@ -49,6 +49,11 @@ b = Bubbles()
 c = Console()
 
 print()
+# default divider is an arrow
+c.print(b.get_rich_chain("Fri 09:45", "white", "black")
+         .link("直 Wi-Fi", "orange3", "white")
+         .link(" Charging", "bright_green", "black").end())
+# semi-circle divider
 c.print(b.get_rich_chain("Fri 09:45", "white", "black", divider="")
          .link("直 Wi-Fi", "orange3", "white")
          .link(" Charging", "bright_green", "black").end())
