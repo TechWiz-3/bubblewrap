@@ -61,3 +61,15 @@ print(b.get_ansi_chain("~/Projects", "\033[37;45m", "\033[0m")
 
 ## Example
 ![bubbles](https://raw.githubusercontent.com/TechWiz-3/bubblewrap/main/media/bubbles.png)
+
+
+## Contributors🌟
+<br>
+
+<div align="center">
+<a href="https://github.com/TechWiz-3/bubblewrap/graphs/contributors">
+
+  <img src="https://contrib.rocks/image?repo=TechWiz-3/bubblewrap&&max=817" />
+
+</a>
+</div>
