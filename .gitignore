@@ -164,4 +164,3 @@ cython_debug/
 .*.swp
 *~
 .*~
-.vscode/settings.json
