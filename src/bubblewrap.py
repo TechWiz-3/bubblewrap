@@ -1,23 +1,26 @@
 class Bubbles:
-
     def __init__(self):
         pass
 
-    def get_rich_bubble(self, txt, bg_color="blue", fg_color="white", rich=True):
+    @staticmethod
+    def get_rich_bubble(txt, bg_color="blue", fg_color="white"):
         circle_style = f"[{bg_color}]"
         circle_close = f"{circle_style[:1]}/{circle_style[1:]}"
         body_open = f"[{fg_color} on {bg_color}]"
         body_close = f"{body_open[:1]}/{body_open[1:]}"
         return f"{circle_style}{circle_close}{body_open}{txt}{body_close}{circle_style}{circle_close}"
 
-    def get_ansi_bubbles(self, txt, circle_style, txt_style, reset):
+    @staticmethod
+    def get_ansi_bubbles(txt, circle_style, txt_style, reset):
         bubble = f"{circle_style}{reset}{txt_style}{txt}{reset}{circle_style}{reset}"
         return bubble
 
-    def get_rich_chain(self, txt, bg_color="blue", fg_color="white", divider=""):
+    @staticmethod
+    def get_rich_chain(txt, bg_color="blue", fg_color="white", divider=""):
         return Link(txt, bg_color, fg_color, divider)
 
-    def get_ansi_chain(self, txt, txt_style, reset, divider=""):
+    @staticmethod
+    def get_ansi_chain(txt, txt_style, reset, divider=""):
         return ANSILink(txt, txt_style, reset, divider)
 
 
