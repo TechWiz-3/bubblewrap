@@ -1,8 +1,6 @@
 name: Upload to PyPi
 
 on:
-    push:
-        branches: [pypi-upload]
     release:
         types:
             [created]
