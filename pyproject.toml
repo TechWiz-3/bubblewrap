@@ -5,11 +5,26 @@ description = "A Python library that makes beautiful text bubbles in your termin
 authors = ["TechWiz-3"]
 license = "GPL-3.0"
 readme = "README.md"
+repository = "https://github.com/TechWiz-3/bubblewrap"
+keywords = [
+    "bubbles",
+    "fonts",
+    "nerd-fonts",
+    "tui",
+    "python"
+]
+packages = [
+    { include = "bubblewrap", from = "src" },
+]
+
+
 
 [tool.poetry.dependencies]
 python = "^3.8"
 rich = "^12.6.0"
 
+[tool.poetry.scripts]
+bubblewrap = 'src.bubblewrap:cli'
 
 [tool.poetry.group.dev.dependencies]
 pylint = "^2.15.4"
