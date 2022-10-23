@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "bubblewrap"
+name = "bubblewrap-cli"
 version = "1.0.0"
 description = "A Python library that makes beautiful text bubbles in your terminal using NerdFont icons"
 authors = ["TechWiz-3"]
