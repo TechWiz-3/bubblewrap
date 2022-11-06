@@ -67,11 +67,11 @@ print(b.get_ansi_chain("~/Projects", "\033[37;45m", "\033[0m")
 ## Implementation
 
 CLI's are becoming more colorful and graphical all the time. At the same time tools like [starship](https://github.com/starship/starship) and [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) are popularising the use of NerdFonts due to their beautiful icons and characters.  
-Meanwhile, UI's in general are becoming more rounded, look at the latest MacOS, Windows, Youtube or Spotify GUI updates, design is moving towards bubbled and rounded looks.  
+Meanwhile, UI's in general are becoming more rounded, look at the latest macOS, Windows, YouTube or Spotify GUI updates, design is moving towards bubbled and rounded looks.  
 
 With the rise of beautiful CLI's, the rising popularity of NerdFonts and the world's obssession with the rounded look, bubblewrap is the perfect way to make your CLI stand out.  
 
-But not everyone uses NerdFonts right? If you don't wish your CLI to be NerdFont dependant, simple add a CLI arguement that allows users to toggle bubblewrapped text `on/off` or add that option to your program's config file.
+But not everyone uses NerdFonts right? If you don't wish your CLI to be NerdFont dependant, simply add a CLI arguement that allows users to toggle bubblewrapped text `on/off` or add that option to your program's config file.
 
 ## Example
 ![bubbles](https://raw.githubusercontent.com/TechWiz-3/bubblewrap/main/media/bubbles.png)
