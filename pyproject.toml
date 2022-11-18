@@ -14,7 +14,7 @@ keywords = [
     "python"
 ]
 packages = [
-    { include = "", from = "src" },
+    { include = "src/bubblewrap.py" },
 ]
 
 
